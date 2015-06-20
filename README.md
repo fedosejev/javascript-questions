@@ -1,7 +1,13 @@
 # JavaScript Questions
-Questions that I was asked. Feel free to create an issue if you don't understand why it works the way it works. 
+Problems that I was asked to solve.
 
 ## Recursion
+
+### Problem
+
+Write a function that uses recursion: `sum(3); // 6`
+
+### Solution
 
 ```js
 function sum(number) {
@@ -30,6 +36,10 @@ You can imagine that `sum(3)` works like this: `sum(3) + sum(2) + sum(1) + sum(0
 
 ## Immediately-Invoked Function Expression (IIFE)
 
+### Problem
+
+What will `obj.a` reference to?
+
 ```js
 var obj = {
   a: 'a',
@@ -43,11 +53,21 @@ var obj = {
 console.log(obj.a); // "c"
 ```
 
+### Solution
+
+```js
+"c"
+```
+
 ### How it works
 
 We call `iife()` function passing `obj` as an argument. `obj` is a reference to `{ a: 'a', b: 'b' }` that we've defined earlier. We're not copying `{ a: 'a', b: 'b' }` when we're passing its reference to `iife()` function - we're only passing the reference. Then we mutate `obj.a` value by setting it to `c`. JS does it by calling internal `[[Put]]` function.
 
 ## Lexical scope
+
+### Problem
+
+What will `bar()` log?
 
 ```js
 var foo = 'foo1';
@@ -61,6 +81,12 @@ function bar() {
 }
 
 console.log(bar()); // "foo2"
+```
+
+### Solution
+
+```js
+"foo2"
 ```
 
 ### How it works
