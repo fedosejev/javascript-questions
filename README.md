@@ -1,4 +1,4 @@
-# JavaScript Questions
+# JavaScript Q&A
 Problems that I was asked to solve.
 
 ## Recursion
