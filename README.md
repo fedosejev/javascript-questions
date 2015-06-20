@@ -99,8 +99,8 @@ When you run this code JS does 2 things:
 Which means JS "seems" our `bar()` function like this:
 ```js
 function bar() {
-  var foo;
-  if (! foo) {
+  var foo; // undefined
+  if (! foo) { // true
     foo = 'foo2';
   }
   
