@@ -16,3 +16,18 @@ console.log(sum(1)); // 1
 console.log(sum(2)); // 3
 console.log(sum(3)); // 6
 ```
+
+## Immediately-Invoked Function Expression (IIFE)
+
+```js
+var obj = {
+  a: 'a',
+  b: 'b'
+};
+
+(function iife(obj) {
+  obj.a = 'c';
+})(obj);
+
+console.log(obj.a); // "c"
+```
