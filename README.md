@@ -153,6 +153,6 @@ Next JavaScript engine evaluates `foo.x` expression - as expected, it evaluates 
 
 Next JavaScript engine assigns a _new reference_ to `foo` - this time, `foo` stores a reference to `{ n: 2 }` object: `foo = { n: 2 }`.
 
-Finally JavaScript engine assigns a reference to to `{ n: 2 }` to a `x` property of an old object - `{ n: 1 }`.
+Finally JavaScript engine assigns a reference to `{ n: 2 }` to a `x` property of an old object - `{ n: 1 }`.
 
 As a result we have `foo` referencing `{ n: 2 }` object and no variable referencing `{ n: 1, x: { n: 2 } }` object.
