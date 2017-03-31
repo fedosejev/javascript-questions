@@ -21,7 +21,7 @@ function sum(number) {
 console.log(sum(3)); // 6
 ```
 
-#### Try
+### Try it yourself
 
 `node solution1`
 
@@ -63,7 +63,7 @@ console.log(obj.a); // "c"
 "c"
 ```
 
-#### Try
+### Try it yourself
 
 `node solution2`
 
@@ -97,7 +97,7 @@ console.log(bar()); // "foo2"
 "foo2"
 ```
 
-#### Try
+### Try it yourself
 
 `node solution3`
 
@@ -141,7 +141,7 @@ What's the value of `foo.x`?
 undefined
 ```
 
-#### Try
+### Try it yourself
 
 `node solution4`
 
