@@ -1,5 +1,4 @@
-# JavaScript Q&A
-Problems that I was asked to solve.
+# JavaScript Questions & Answers
 
 ## 1. Recursion
 
