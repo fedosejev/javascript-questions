@@ -1,7 +1,7 @@
 # JavaScript Q&A
 Problems that I was asked to solve.
 
-## Recursion
+## 1. Recursion
 
 ### Problem
 
@@ -13,13 +13,17 @@ Write a function that uses recursion: `sum(3); // 6`
 function sum(number) {
   if (number < 1) {
     return number;
-  } else {
-    return (number + sum(number - 1));
   }
+
+  return (number + sum(number - 1));
 }
 
 console.log(sum(3)); // 6
 ```
+
+#### Try
+
+`node solution1`
 
 ### How it works
 
@@ -34,14 +38,14 @@ You can imagine that `sum(3)` works like this: `sum(3) + sum(2) + sum(1) + sum(0
 7. Then it adds `2` to `1` and returns `3`.
 8. Then it adds `3` to `3` and returns `6`.
 
-## Immediately-Invoked Function Expression (IIFE)
+## 2. Immediately-Invoked Function Expression (IIFE)
 
 ### Problem
 
 What will `obj.a` reference to?
 
 ```js
-var obj = {
+const obj = {
   a: 'a',
   b: 'b'
 };
@@ -59,11 +63,15 @@ console.log(obj.a); // "c"
 "c"
 ```
 
+#### Try
+
+`node solution2`
+
 ### How it works
 
 We call `iife()` function passing `obj` as an argument. `obj` is a reference to `{ a: 'a', b: 'b' }` that we've defined earlier. We're not copying `{ a: 'a', b: 'b' }` when we're passing its reference to `iife()` function - we're only passing the reference. Then we mutate `obj.a` value by setting it to `c`. JS does it by calling internal `[[Put]]` function.
 
-## Lexical scope
+## 3. Lexical scope
 
 ### Problem
 
@@ -76,7 +84,7 @@ function bar() {
   if (! foo) {
     var foo = 'foo2';
   }
-  
+
   return foo;
 }
 
@@ -88,6 +96,10 @@ console.log(bar()); // "foo2"
 ```js
 "foo2"
 ```
+
+#### Try
+
+`node solution3`
 
 ### How it works
 
@@ -103,7 +115,7 @@ function bar() {
   if (! foo) { // true
     foo = 'foo2';
   }
-  
+
   return foo;
 }
 ```
