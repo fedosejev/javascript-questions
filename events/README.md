@@ -12,9 +12,19 @@
 
 ## EventEmitters
 
+> "It is a generic wrapper that more easily allows creating event-based APIs."
+
 + Publish/Subscribe
 + Act on results as they arrive
 + Partial results before error
+
+#### Important:
+
++ EventEmitters are synchronous: `node event-emitters-are-synchronous`
+
+> "The emit function may be called asynchronously, but note that all the listener functions will be executed synchronously, in the order they were added, before any execution can continue in statements following the call to emit"
+
+https://nodesource.com/blog/understanding-the-nodejs-event-loop/
 
 ### `EventEmitter` function
 

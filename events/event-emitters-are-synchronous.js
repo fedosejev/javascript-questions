@@ -21,4 +21,6 @@ priceSource.on('error', () => {
   console.error('Try again later!');
 });
 
+console.log("Before we've got price.");
 priceSource.getPrice(stockSymbol);
+console.log("After we've got price.");
