@@ -10,7 +10,7 @@
 
 `node callbacks`
 
-## Events
+## EventEmitters
 
 + Publish/Subscribe
 + Act on results as they arrive
