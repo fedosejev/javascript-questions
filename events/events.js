@@ -8,9 +8,9 @@ const STOCK_PRICES = {
 function getPrice(stockSymbol) {
   const eventEmitter = new EventEmitter();
 
-  setTimeout(() => {
+  process.nextTick(() => {
     eventEmitter.emit('data', STOCK_PRICES[stockSymbol]);
-  }, 250);
+  });
 
   return eventEmitter;
 }
