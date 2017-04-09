@@ -30,6 +30,10 @@ The subscriber:
 + An event can be emitted with zero or more arguments
 + The set of events and their arguments constitute a "interface" exposed to the subscriber by the publisher (emitter)
 
+Two common patterns for `EventEmitter`s:
++ As a return value from a function call
++ Objects that extend `EventEmitter` to emit events themselves
+
 ### Try
 
 `node events`
