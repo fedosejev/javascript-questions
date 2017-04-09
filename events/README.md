@@ -16,6 +16,19 @@
 + Act on results as they arrive
 + Partial results before error
 
+### `EventEmitter` function
+
+The publisher:
+
+`emitter.emit(event, [args]);`
+
+The subscriber:
+
+`emitter.on(event, listener);`
+
++ The "event" can be any string
++ An event can be emitted with zero or more arguments
+
 ### Try
 
 `node events`
