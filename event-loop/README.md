@@ -10,3 +10,7 @@ setTimeout(() => {}, 0);
 
 + Not a guaranteed time to execution.
 + A minimum time to execution.
+
+### Try
+
+`node set-timeout`
