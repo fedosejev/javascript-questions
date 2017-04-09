@@ -32,7 +32,7 @@ The subscriber:
 
 Two common patterns for `EventEmitter`s:
 + As a return value from a function call
-+ Objects that extend `EventEmitter` to emit events themselves
++ Objects that extend `EventEmitter.prototype` object to emit events themselves
 
 ### Try
 
