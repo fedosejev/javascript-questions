@@ -34,3 +34,13 @@ Three common patterns for `EventEmitter`s:
 + As a return value from a function call: `node use-event-emitter`
 + Objects that extend `EventEmitter.prototype` object to emit events themselves: `node extend-event-emitter-prototype`
 + Objects that extend `EventEmitter` function to emit events themselves: `node extend-event-emitter-function`
+
+## Streams
+
++ ReadableStream
++ WriteableStream
+
+### Try
+
+1. `npm install request`
+2. `npm streams`
