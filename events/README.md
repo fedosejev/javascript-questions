@@ -28,6 +28,7 @@ The subscriber:
 
 + The "event" can be any string
 + An event can be emitted with zero or more arguments
++ The set of events and their arguments constitute a "interface" exposed to the subscriber by the publisher (emitter)
 
 ### Try
 
