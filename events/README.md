@@ -30,6 +30,7 @@ The subscriber:
 + An event can be emitted with zero or more arguments
 + The set of events and their arguments constitute a "interface" exposed to the subscriber by the publisher (emitter)
 
-Two common patterns for `EventEmitter`s:
+Three common patterns for `EventEmitter`s:
 + As a return value from a function call: `node use-event-emitter`
-+ Objects that extend `EventEmitter.prototype` object to emit events themselves: `node use-event-emitter`
++ Objects that extend `EventEmitter.prototype` object to emit events themselves: `node extend-event-emitter-prototype`
++ Objects that extend `EventEmitter` function to emit events themselves: `node extend-event-emitter-function`
