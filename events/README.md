@@ -31,9 +31,5 @@ The subscriber:
 + The set of events and their arguments constitute a "interface" exposed to the subscriber by the publisher (emitter)
 
 Two common patterns for `EventEmitter`s:
-+ As a return value from a function call
-+ Objects that extend `EventEmitter.prototype` object to emit events themselves
-
-### Try
-
-`node events`
++ As a return value from a function call: `node use-event-emitter`
++ Objects that extend `EventEmitter.prototype` object to emit events themselves: `use-event-emitter`
