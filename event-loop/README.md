@@ -21,6 +21,8 @@ setTimeout(() => {}, 0);
 
 ## `setImmediate`
 
+`node set-immediate`
+
 ## `process.nextTick`
 
 > "By placing the callback in a process.nextTick(), the script still has the ability to run to completion, allowing all the variables, functions, etc., to be initialized prior to the callback being called. It also has the advantage of not allowing the event loop to continue."
